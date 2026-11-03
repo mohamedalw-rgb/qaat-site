@@ -134,6 +134,8 @@ section { padding: 64px 0; }
 .ornament::before, .ornament::after { content: ""; width: 38px; height: 1px; background: currentColor; opacity: .5; }
 
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+@media (max-width: 760px) { .grid-3 { grid-template-columns: 1fr; } }
 @media (max-width: 900px) { .grid-4 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .grid-4 { grid-template-columns: 1fr; } }
 .tile {
